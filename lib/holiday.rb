@@ -74,9 +74,9 @@ end
 def all_holidays_with_bbq(holiday_hash)
   holiday_hash.each do |season, holiday|
     season.map do |holiday, supply|
+      binding.pry
       if supply == "BBQ"
         supply
-        binding.pry
 end
 end
 end
