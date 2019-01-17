@@ -67,6 +67,9 @@ holiday_hash.each do |season, holidays|
    puts "#{season.capitalize}:"
 holidays.each do |holiday, supplies|
   puts "  #{holiday.to_s.split('_').map {|w| w.capitalize }.join(' ') }: #{supplies.join(", ")}"
+  
+  #Here we are taking our 'holiday' placeholder and creating a new string of all the items involved.  The string is capitalized using {|w| w.capitalize}
+  
  end
 end
 end
@@ -79,7 +82,7 @@ end
 end.flatten.compact
 end
 
-
+#Must use .map or .collect to return a new string of values.  Without .map/.collect you will continue to return the original hash. 
 
 
 
